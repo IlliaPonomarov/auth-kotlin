@@ -40,8 +40,10 @@ fun AuthTheme(
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+    val checkDynamicColor: Boolean = dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+    val colorScheme =
+        when {
+        checkDynamicColor -> {
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
