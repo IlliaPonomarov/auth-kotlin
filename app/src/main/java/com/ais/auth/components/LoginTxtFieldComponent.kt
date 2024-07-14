@@ -8,7 +8,12 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.dp
 import com.ais.auth.ui.theme.LightPink80
 import com.ais.auth.ui.theme.Pink80
 
@@ -26,7 +31,10 @@ data class LoginTxtFieldComponent(
                 input(it)
             },
             placeholder = {
-                Text(text = label, color = Color(Color.Black.value))
+                Text(text = label, color = Color.White, style = TextStyle(
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                ))
             },
             modifier = modifier,
             keyboardOptions = KeyboardOptions(
