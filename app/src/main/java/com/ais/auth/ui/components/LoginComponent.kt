@@ -1,4 +1,4 @@
-package com.ais.auth.components
+package com.ais.auth.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -34,6 +34,11 @@ import com.ais.auth.ui.theme.DarkPurple
 import com.ais.auth.ui.theme.LightPink80
 
 public class LoginComponent {
+
+
+    /**
+     * Composable function to display the login screen
+     */
     @Composable
     fun Logging() {
         val scrollState = rememberScrollState(0)
@@ -103,7 +108,10 @@ public class LoginComponent {
             /**
              * Login Button
              */
-            LoginButtonComponent(username, password, Modifier.align(Alignment.CenterHorizontally)).Build()
+            LoginButtonComponent(
+                username,
+                password,
+                Modifier.align(Alignment.CenterHorizontally)).Build()
         }
     }
 

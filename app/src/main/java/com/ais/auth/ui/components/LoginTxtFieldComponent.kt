@@ -1,4 +1,4 @@
-package com.ais.auth.components
+package com.ais.auth.ui.components
 
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField

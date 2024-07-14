@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.painter.ColorPainter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.ais.auth.ui.theme.AuthTheme
-import com.ais.auth.components.LoginComponent;
+import com.ais.auth.ui.components.LoginComponent;
 import com.ais.auth.ui.theme.LightPink80
 
 
