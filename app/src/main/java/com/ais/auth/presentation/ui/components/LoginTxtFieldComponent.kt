@@ -1,5 +1,6 @@
 package com.ais.auth.presentation.ui.components
 
+import androidx.compose.foundation.border
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -26,7 +27,8 @@ data class LoginTxtFieldComponent(
 
     @Composable
     fun Build() {
-        OutlinedTextField(value = name,
+        OutlinedTextField(
+            value = name,
             onValueChange = {
                 input(it)
             },
@@ -36,7 +38,7 @@ data class LoginTxtFieldComponent(
                     fontWeight = FontWeight.Bold
                 ))
             },
-            modifier = modifier,
+            modifier = modifier.then(Modifier.border(2.dp, Color.Black)),
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text
             ),
@@ -45,7 +47,8 @@ data class LoginTxtFieldComponent(
                 unfocusedPlaceholderColor = Color(LightPink80.value),
                 focusedPlaceholderColor = Color(Pink80.value),
                 focusedContainerColor = Color(Pink80.value),
-            )
+            ),
+
         )
     }
 }
