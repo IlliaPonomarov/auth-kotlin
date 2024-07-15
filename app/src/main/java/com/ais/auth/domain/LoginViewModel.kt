@@ -1,10 +1,10 @@
-package com.ais.auth.ux
+package com.ais.auth.domain
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.ais.auth.ux.entites.LoginEntity
+import com.ais.auth.domain.entites.LoginEntity
 
 class LoginViewModel: ViewModel() {
     var login by mutableStateOf(LoginEntity("", ""))

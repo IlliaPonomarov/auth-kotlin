@@ -1,4 +1,4 @@
-package com.ais.auth.ui.components
+package com.ais.auth.presentation.ui.components
 
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField
@@ -14,8 +14,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
-import com.ais.auth.ui.theme.LightPink80
-import com.ais.auth.ui.theme.Pink80
+import com.ais.auth.presentation.ui.theme.LightPink80
+import com.ais.auth.presentation.ui.theme.Pink80
 
 data class LoginTxtFieldComponent(
     val name: String,

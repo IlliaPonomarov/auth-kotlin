@@ -1,4 +1,4 @@
-package com.ais.auth.ux.entites
+package com.ais.auth.domain.entites
 
 data class LoginEntity (
     val username: String,

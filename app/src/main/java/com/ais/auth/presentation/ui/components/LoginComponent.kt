@@ -1,4 +1,4 @@
-package com.ais.auth.ui.components
+package com.ais.auth.presentation.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,8 +30,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ais.auth.R
-import com.ais.auth.ui.theme.DarkPurple
-import com.ais.auth.ui.theme.LightPink80
+import com.ais.auth.presentation.ui.theme.DarkPurple
+import com.ais.auth.presentation.ui.theme.LightPink80
 
 public class LoginComponent {
 
@@ -112,6 +112,8 @@ public class LoginComponent {
                 username,
                 password,
                 Modifier.align(Alignment.CenterHorizontally)).Build()
+
+
         }
     }
 

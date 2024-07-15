@@ -1,4 +1,4 @@
-package com.ais.auth.ui.theme
+package com.ais.auth.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
